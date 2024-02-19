@@ -24,4 +24,12 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
-vim.opt.updatetime = 50
+-- clipboard
+vim.opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+
+-- split windows
+vim.opt.splitright = true -- split vertical window to the right
+vim.opt.splitbelow = true -- split horizontal window to the bottom
+
+-- turn off swapfile
+vim.opt.swapfile = false
